@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f4f4f4;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-icon {
+  position: relative;
+  font-size: 20px;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 3px 6px;
+}
+
+.tabs-container {
+  display: flex;
+  overflow-x: auto;
+  background: white;
+}
+
+.tab {
+  padding: 12px 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tab.active {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+.dish-card {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.dish-info {
+  flex: 1;
+}
+
+.dish-card img {
+  width: 120px;
+  border-radius: 8px;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: green;
+  color: white;
+  width: fit-content;
+  padding: 5px 15px;
+  border-radius: 25px;
+}
+
+.counter button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.not-available {
+  color: red;
+}
+
+.customization {
+  color: purple;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .dish-card {
+    flex-direction: column;
+  }
+
+  .dish-card img {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
